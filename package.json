@@ -15,7 +15,7 @@
   },
   "sideEffects": false,
   "scripts": {
-    "test": "",
+    "test": "mocha --recursive",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint --ignore-path .gitignore --ext .js,.vue .",
@@ -34,6 +34,8 @@
     "eslint": "^7.24.0",
     "eslint-config-gbv": "^1.0.1",
     "eslint-plugin-vue": "^7.9.0",
+    "mocha": "^8.3.2",
+    "mocha-eslint": "^7.0.0",
     "vite": "^2.1.5"
   },
   "author": "Stefan Peters <stefandesu@exo.pm> (https://exo.pm)",
