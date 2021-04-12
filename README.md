@@ -28,6 +28,7 @@ Some requirements:
 To-dos:
 - [x] Add pre-commit rules
 - [ ] Add testing
+  - [ ] See [here](https://v3.vuejs.org/guide/testing.html#introduction) for Vue-specific testing
 - [x] Add dev branch and adjust release script accordingly
 - [ ] Extend README
 - [x] Add GitHub workflows for tests, building, and releases (GitHub + npm)
@@ -147,8 +148,6 @@ Fully working HTML example:
 ```
 
 ## Publish
-**Note:** This is not yet fully implemented!
-
 Please work on the `dev` branch during development (or better yet, develop in a feature branch and merge into `dev` when ready).
 
 When a new release is ready (i.e. the features are finished, merged into `dev`, and all tests succeed), run the included release script (replace "patch" with "minor" or "major" if necessary):
