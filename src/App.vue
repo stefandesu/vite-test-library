@@ -1,7 +1,4 @@
 <template>
-  <img
-    alt="Vue logo"
-    src="./assets/logo.png">
   <p>
     <Bold>
       Bold component with only default slot
