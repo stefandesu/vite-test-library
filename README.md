@@ -26,7 +26,7 @@ Some requirements:
 - Add other developer tools that we are using (ESLint via [eslint-config-gbv](https://github.com/gbv/eslint-config-gbv), testing, etc.).
 
 To-dos:
-- [ ] Add pre-commit rules
+- [x] Add pre-commit rules
 - [ ] Add testing
 - [x] Add dev branch and adjust release script accordingly
 - [ ] Extend README
