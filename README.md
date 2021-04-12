@@ -28,7 +28,7 @@ Some requirements:
 To-dos:
 - [x] Add pre-commit rules
 - [ ] Add testing
-  - [ ] See [here](https://v3.vuejs.org/guide/testing.html#introduction) for Vue-specific testing
+  - See [here](https://v3.vuejs.org/guide/testing.html#introduction) for Vue-specific testing
 - [x] Add dev branch and adjust release script accordingly
 - [ ] Extend README
 - [x] Add GitHub workflows for tests, building, and releases (GitHub + npm)
@@ -157,7 +157,7 @@ npm run release:patch
 ```
 
 This will:
-- Check if we are on `dev`
+- Check that we are on `dev`
 - Run tests and build to make sure everything works
 - Make sure `dev` is up-to-date
 - Run `npm version patch` (or "minor"/"major")
@@ -167,7 +167,7 @@ This will:
 - Push `main` with tags
 - Switch back to `dev`
 
-After running this, GitHub Actions will automatically publish the new version to npm. It will also create a new GitHub Release draft. Please edit and publish the release manually.
+After running this, GitHub Actions will **automatically publish the new version to npm**. It will also create a new GitHub Release draft. Please **edit and publish the release draft manually**.
 
 ## License
 MIT Copyright (c) 2021 Stefan です
