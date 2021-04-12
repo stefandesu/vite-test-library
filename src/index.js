@@ -8,3 +8,8 @@ export const install = (vue) => {
 }
 
 export * from "./components"
+
+export default {
+  ...components,
+  install,
+}
