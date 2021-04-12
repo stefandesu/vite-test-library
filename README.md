@@ -26,6 +26,7 @@ To-dos:
 - [ ] Extend README
 - [ ] Add GitHub workflows for tests, building, and releases (GitHub + npm)
 - [ ] Consider adding JSDoc for documentation
+- [ ] Consider adding [TypeScript declaration files](https://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html) (we might be able to generate these from JSDoc tags after we added them)
 
 ## Development
 ```bash
