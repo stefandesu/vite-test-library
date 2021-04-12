@@ -1,11 +1,10 @@
-import * as components from "./components/index"
+import * as components from "./components"
 
-const install = (instance) => {
-  for (let componentKey in components) {
-    instance.use((components)[componentKey])
+// Install method so that it can be used as a plugin.
+export const install = (vue) => {
+  for (let key in components) {
+    vue.use(components[key])
   }
 }
-
-export default install
 
 export * from "./components"
