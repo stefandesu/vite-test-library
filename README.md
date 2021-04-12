@@ -3,6 +3,7 @@ Using [Vite](https://vitejs.dev) for creating Vue 3 component libraries.
 
 ## Table of Contents <!-- omit in toc -->
 - [Background](#background)
+- [To-Dos for adjusting to your project](#to-dos-for-adjusting-to-your-project)
 - [Development](#development)
 - [Using the library](#using-the-library)
   - [Node](#node)
@@ -24,9 +25,24 @@ To-dos:
 - [ ] Add testing
 - [x] Add dev branch and adjust release script accordingly
 - [ ] Extend README
-- [ ] Add GitHub workflows for tests, building, and releases (GitHub + npm)
+- [x] Add GitHub workflows for tests, building, and releases (GitHub + npm)
 - [ ] Consider adding JSDoc for documentation
 - [ ] Consider adding [TypeScript declaration files](https://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html) (we might be able to generate these from JSDoc tags after we added them)
+
+## To-Dos for adjusting to your project
+- Copy this repo: `npx degit https://github.com/stefandesu/vite-test-library.git your-library-name`
+- Update GitHub release workflow: `sed -i '' 's/vite-test-library/your-library-name/g' .github/workflows/release.yml`
+- Add `NPM_TOKEN` secret to GitHub project (Settings - Secrets - New repository secrets)
+- Update package.json:
+  - `sed -i '' 's/vite-test-library/your-library-name/g' package.json`
+  - Also adjust name (namespace), version, author, description
+- Create Git repository: `git init -b main`
+- Add remote and push repo to GitHub
+  - ...
+- Create a dev branch and push it to GitHub:
+  - `git checkout -b dev`
+  - `git push -u origin dev`
+- ...
 
 ## Development
 ```bash
