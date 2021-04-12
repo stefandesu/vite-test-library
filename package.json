@@ -18,7 +18,11 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint --ignore-path .gitignore --ext .js,.vue .",
-    "fix": "eslint --ignore-path .gitignore --ext .js,.vue --fix ."
+    "fix": "eslint --ignore-path .gitignore --ext .js,.vue --fix .",
+    "release": "test $(git rev-parse --abbrev-ref HEAD) = main && npm run build && git pull && npm version $SEMVER && git push --follow-tags",
+    "release:patch": "SEMVER=patch npm run release",
+    "release:minor": "SEMVER=minor npm run release",
+    "release:major": "SEMVER=major npm run release"
   },
   "dependencies": {
     "vue": "^3.0.5"
