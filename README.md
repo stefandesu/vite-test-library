@@ -1,5 +1,10 @@
 # vite-test-library
-Using [Vite](https://vitejs.dev) for creating Vue 3 component libraries.
+[![Test and build](https://github.com/stefandesu/vite-test-library/actions/workflows/test-and-build.yml/badge.svg)](https://github.com/stefandesu/vite-test-library/actions/workflows/test-and-build.yml)
+[![GitHub package version](https://img.shields.io/github/package-json/v/stefandesu/vite-test-library.svg?label=version)](https://github.com/stefandesu/vite-test-library)
+[![NPM package name](https://img.shields.io/badge/npm-@stefandesu/vite--test--library-blue.svg)](https://www.npmjs.com/package/@stefandesu/vite-test-library)
+[![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg)](https://github.com/RichardLitt/standard-readme)
+
+> Using [Vite](https://vitejs.dev) for creating Vue 3 component libraries.
 
 ## Table of Contents <!-- omit in toc -->
 - [Background](#background)
@@ -36,6 +41,9 @@ To-dos:
 - Update package.json:
   - `sed -i '' 's/vite-test-library/your-library-name/g' package.json`
   - Also adjust name (namespace), version, author, description
+- Adjust README
+  - Badges
+  - ...
 - Create Git repository: `git init -b main`
 - Add remote and push repo to GitHub
   - ...
