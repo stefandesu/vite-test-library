@@ -44,6 +44,7 @@ To-dos:
 - Adjust README
   - Badges
   - ...
+- Adjust license if necessary
 - Create Git repository: `git init -b main`
 - Add remote and push repo to GitHub
   - ...
@@ -170,4 +171,4 @@ This will:
 After running this, GitHub Actions will automatically publish the new version to npm. It will also create a new GitHub Release draft. Please edit and publish the release manually.
 
 ## License
-MIT
+MIT Copyright (c) 2021 Stefan です
