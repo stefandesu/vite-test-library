@@ -37,18 +37,36 @@
     class="bold-test">
     Testing with display: block; and width+height
   </Bold>
+  <p>
+    Item:
+    <item-name :item="{ notation: ['IN'], prefLabel: { en: 'ItemName' } }" />
+  </p>
+  <p>
+    Item (no label):
+    <item-name
+      :item="{ notation: ['IN'], prefLabel: { en: 'ItemName' } }"
+      :show-label="false" />
+  </p>
+  <p>
+    Item (no notation):
+    <item-name
+      :item="{ notation: ['IN'], prefLabel: { en: 'ItemName' } }"
+      :show-notation="false" />
+  </p>
 </template>
 
 <script>
 import { defineComponent } from "vue"
 import Bold from "./components/bold/Bold.vue"
 import Italic from "./components/italic/Italic.vue"
+import ItemName from "./components/item-name"
 
 export default defineComponent({
   name: "App",
   components: {
     Bold,
     Italic,
+    ItemName,
   },
 })
 </script>

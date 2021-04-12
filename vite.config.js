@@ -11,11 +11,12 @@ export default defineConfig({
       name: "ViteTestLibrary",
     },
     rollupOptions: {
-      external: ["vue"],
+      external: ["vue", "jskos-tools"],
       output: {
         exports: "named",
         globals: {
           vue: "Vue",
+          "jskos-tools": "jskos",
         },
       },
     },

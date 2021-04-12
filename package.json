@@ -37,6 +37,7 @@
     "test"
   ],
   "dependencies": {
+    "jskos-tools": "^1.0.17",
     "vue": "^3.0.5"
   },
   "devDependencies": {

@@ -13,6 +13,7 @@
 - [Using the library](#using-the-library)
   - [Node](#node)
   - [Browser](#browser)
+- [Note about external dependencies](#note-about-external-dependencies)
 - [Publish](#publish)
 - [License](#license)
 
@@ -67,7 +68,7 @@ npm run build # for Vite build
 
 ### Node
 
-1. Add the library to your project:
+1\. Add the library to your Vue project:
 ```bash
 npm install @stefandesu/vite-test-library
 ```
@@ -146,6 +147,11 @@ Fully working HTML example:
   </body>
 </html>
 ```
+
+## Note about external dependencies
+As an example, a component `ItemName` was added to this repository that depends on [jskos-tools](https://github.com/gbv/jskos-tools). However, jskos-tools is not part of the build, which means that it must be installed via npm or included via the `<script>` tag.
+
+The nice thing about this is that if that particular component is not used or needed, it is not necessary to install/include jskos-tools.
 
 ## Publish
 Please work on the `dev` branch during development (or better yet, develop in a feature branch and merge into `dev` when ready).
