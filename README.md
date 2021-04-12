@@ -22,7 +22,7 @@ Some requirements:
 To-dos:
 - [ ] Add pre-commit rules
 - [ ] Add testing
-- [ ] Add dev branch and adjust release script accordingly
+- [x] Add dev branch and adjust release script accordingly
 - [ ] Extend README
 - [ ] Add GitHub workflows for tests, building, and releases (GitHub + npm)
 - [ ] Consider adding JSDoc for documentation
@@ -133,14 +133,14 @@ npm run release:patch
 ```
 
 This will:
+- Check if we are on `dev`
 - Run tests and build to make sure everything works
-- Switch to `dev`
 - Make sure `dev` is up-to-date
 - Run `npm version patch` (or "minor"/"major")
 - Push changes to `dev`
-- Switch to `master`
+- Switch to `main`
 - Merge changes from `dev`
-- Push `master` with tags
+- Push `main` with tags
 - Switch back to `dev`
 
 After running this, GitHub Actions will automatically publish the new version to npm. It will also create a new GitHub Release draft. Please edit and publish the release manually.
