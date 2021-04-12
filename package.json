@@ -1,6 +1,6 @@
 {
   "name": "@stefandesu/vite-test-library",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "files": [
     "dist",
     "src"
