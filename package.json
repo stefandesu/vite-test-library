@@ -29,8 +29,7 @@
   },
   "lint-staged": {
     "**/*.{js,vue}": [
-      "eslint --fix",
-      "npm run --silent test"
+      "eslint --fix"
     ]
   },
   "pre-commit": [
