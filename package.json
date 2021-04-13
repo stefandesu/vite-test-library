@@ -13,6 +13,7 @@
       "require": "./dist/vite-test-library.umd.js"
     }
   },
+  "types": "./dist/index.d.ts",
   "sideEffects": false,
   "scripts": {
     "test": "mocha --recursive",
