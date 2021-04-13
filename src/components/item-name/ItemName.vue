@@ -1,13 +1,7 @@
 <template>
   <span>
-    <b v-if="showNotation">
-      {{ notation }}
-    </b>
-    <!-- TODO: Find out why there is no space without forcing it... -->
-    <template v-if="showLabel && showNotation">&nbsp;</template>
-    <template v-if="showLabel">
-      {{ label }}
-    </template>
+    <b>{{ notation }}</b>
+    {{ label }}
   </span>
 </template>
 
@@ -33,8 +27,16 @@ export default defineComponent({
   },
   setup(props) {
     return {
-      notation: computed(() => jskos.notation(props.item)),
-      label: computed(() => jskos.prefLabel(props.item, { fallbackToUri: !props.showNotation })),
+      notation: computed(() =>
+        props.showNotation
+          ? jskos.notation(props.item)
+          : "",
+      ),
+      label: computed(() =>
+        props.showLabel
+          ? jskos.prefLabel(props.item, { fallbackToUri: !props.showNotation })
+          : "",
+      ),
     }
   },
 })
