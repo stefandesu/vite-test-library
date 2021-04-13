@@ -3,6 +3,8 @@
     <b v-if="showNotation">
       {{ notation }}
     </b>
+    <!-- TODO: Find out why there is no space without forcing it... -->
+    <template v-if="showLabel && showNotation">&nbsp;</template>
     <template v-if="showLabel">
       {{ label }}
     </template>
@@ -11,7 +13,7 @@
 
 <script>
 import { defineComponent, computed } from "vue"
-import jskos from "jskos-tools"
+import * as jskos from "jskos-tools"
 
 export default defineComponent({
   name: "ItemName",
