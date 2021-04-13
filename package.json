@@ -17,7 +17,7 @@
   "scripts": {
     "test": "mocha --recursive",
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && tsc",
     "lint": "eslint --ignore-path .gitignore --ext .js,.vue .",
     "fix": "npm run lint -- --fix",
     "lint-staged": "lint-staged",
@@ -50,6 +50,7 @@
     "mocha": "^8.3.2",
     "mocha-eslint": "^7.0.0",
     "pre-commit": "^1.2.2",
+    "typescript": "^4.2.4",
     "vite": "^2.1.5",
     "yesno": "^0.3.1"
   },
