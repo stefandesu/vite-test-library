@@ -14,6 +14,10 @@
   - [Node](#node)
   - [Browser](#browser)
 - [Note about external dependencies](#note-about-external-dependencies)
+- [Notes about building a Vue 3 application with Vite](#notes-about-building-a-vue-3-application-with-vite)
+  - [Legacy browser support](#legacy-browser-support)
+  - [Base path](#base-path)
+  - [Defining environment variables](#defining-environment-variables)
 - [Publish](#publish)
 - [License](#license)
 
@@ -152,6 +156,28 @@ Fully working HTML example:
 As an example, a component `ItemName` was added to this repository that depends on [jskos-tools](https://github.com/gbv/jskos-tools). However, jskos-tools is not part of the build, which means that it must be installed via npm or included via the `<script>` tag.
 
 The nice thing about this is that if that particular component is not used or needed, it is not necessary to install/include jskos-tools.
+
+## Notes about building a Vue 3 application with Vite
+
+### Legacy browser support
+By default, [only modern browsers are supported by Vite's builds](https://vitejs.dev/guide/build.html#browser-compatibility). In most cases, legacy browsers (which does **not** mean IE11, but rather older versions of Firefox and Chrome) should be supported as well. It is recommended to use [@vitejs/plugin-legacy](https://github.com/vitejs/vite/tree/main/packages/plugin-legacy) for this.
+
+### Base path
+In many cases, applications will not be hosted under the root base path (`/`). In those cases, it is necessary to define the `base` option in `vite.config.js`, or provide it as an argument for the build command. See also: [Vite Docs: Public Base Path](https://vitejs.dev/guide/build.html#public-base-path)
+
+### Defining environment variables
+Some packages use the `process.browser` variable to determine whether the code is run in the browser or in Node.js. Vite's build does not define this variable by default. If necessary, it can be defined in `vite.config.js` like this:
+
+```js
+export default defineConfig({
+  // ...
+  define: {
+    "process.browser": true,
+  },
+})
+```
+
+For a detailed example that also includes other `process.env` variables, see [the `vite.config.js` in coli-ana](https://github.com/gbv/coli-ana/blob/main/vite.config.js).
 
 ## Publish
 Please work on the `dev` branch during development (or better yet, develop in a feature branch and merge into `dev` when ready).
