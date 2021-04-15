@@ -9,6 +9,7 @@ export default defineConfig({
     lib: {
       entry: path.resolve(__dirname, "src/index.js"),
       name: "ViteTestLibrary",
+      formats: ["es", "umd", "amd", "cjs", "iife"],
     },
     rollupOptions: {
       external: ["vue", "jskos-tools"],
