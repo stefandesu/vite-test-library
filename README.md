@@ -43,10 +43,10 @@ To-dos:
 ## To-Dos for adjusting to your project
 - Copy this repo: `npx degit https://github.com/stefandesu/vite-test-library.git your-library-name`
 - Update GitHub release workflow: `sed -i '' 's/vite-test-library/your-library-name/g' .github/workflows/release.yml`
-- Add `NPM_TOKEN` secret to GitHub project (Settings - Secrets - New repository secrets)
 - Update package.json:
   - `sed -i '' 's/vite-test-library/your-library-name/g' package.json`
   - Also adjust name (namespace), version, author, description
+- Adjust package name in `vite.config.js`
 - Adjust README
   - Badges
   - ...
@@ -54,6 +54,7 @@ To-dos:
 - Create Git repository: `git init -b main`
 - Add remote and push repo to GitHub
   - ...
+- Add `NPM_TOKEN` secret to GitHub project (Settings - Secrets - New repository secrets)
 - Create a dev branch and push it to GitHub:
   - `git checkout -b dev`
   - `git push -u origin dev`
