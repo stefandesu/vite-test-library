@@ -85,7 +85,7 @@ import App from './App.vue'
 
 const app = createApp(App)
 
-import ViteTestLibrary from "@stefandesu/vite-test-library"
+import * as ViteTestLibrary from "@stefandesu/vite-test-library"
 app.use(ViteTestLibrary)
 
 app.mount('#app')
