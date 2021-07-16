@@ -141,7 +141,7 @@ Fully working HTML example:
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vue App</title>
     <!-- Our library's stylesheet here (adjust version if necessary) -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@stefandesu/vite-test-library@0.1/dist/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@stefandesu/vite-test-library@0.2/dist/style.css">
   </head>
   <body>
     <div id="app">
@@ -155,7 +155,7 @@ Fully working HTML example:
     <!-- Vue 3 production build -->
     <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.prod.js"></script>
     <!-- Our library (adjust version if necessary) -->
-    <script src="https://cdn.jsdelivr.net/npm/@stefandesu/vite-test-library@0.1/dist/vite-test-library.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@stefandesu/vite-test-library@0.2/dist/vite-test-library.umd.min.js"></script>
     <script>
       // Here, we are creating an empty Vue app and include the library as a plugin.
       Vue.createApp({}).use(ViteTestLibrary).mount("#app")
