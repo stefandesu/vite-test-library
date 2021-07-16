@@ -57,9 +57,7 @@
 
 <script>
 import { defineComponent } from "vue"
-import Bold from "./components/bold/Bold.vue"
-import Italic from "./components/italic/Italic.vue"
-import ItemName from "./components/item-name"
+import { Bold, Italic, ItemName } from "."
 
 export default defineComponent({
   name: "App",

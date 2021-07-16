@@ -45,5 +45,6 @@ export default defineComponent({
 <style>
 .vite-test-library-itemName > *:first-child {
   font-weight: bold;
+  padding-right: 0.2em;
 }
 </style>
