@@ -33,19 +33,19 @@
   ],
   "dependencies": {
     "jskos-tools": "^1.0.17",
-    "vue": "^3.0.5"
+    "vue": "^3.1.4"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^1.2.1",
-    "@vue/compiler-sfc": "^3.0.5",
-    "eslint": "^7.24.0",
-    "eslint-config-gbv": "^1.0.1",
-    "eslint-plugin-vue": "^7.9.0",
-    "lint-staged": "^10.5.4",
-    "mocha": "^8.3.2",
+    "@vitejs/plugin-vue": "^1.2.5",
+    "@vue/compiler-sfc": "^3.1.4",
+    "eslint": "^7.30.0",
+    "eslint-config-gbv": "^1.0.3",
+    "eslint-plugin-vue": "^7.13.0",
+    "lint-staged": "^11.0.1",
+    "mocha": "^8.4.0",
     "mocha-eslint": "^7.0.0",
     "pre-commit": "^1.2.2",
-    "vite": "^2.1.5",
+    "vite": "^2.4.2",
     "yesno": "^0.3.1"
   },
   "author": "Stefan Peters <stefandesu@exo.pm> (https://exo.pm)",
