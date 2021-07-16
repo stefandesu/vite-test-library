@@ -1,7 +1,7 @@
 <template>
-  <span>
-    <b>{{ notation }}</b>
-    {{ label }}
+  <span class="vite-test-library-itemName">
+    <span>{{ notation }}</span>
+    <span>{{ label }}</span>
   </span>
 </template>
 
@@ -41,3 +41,9 @@ export default defineComponent({
   },
 })
 </script>
+
+<style>
+.vite-test-library-itemName > *:first-child {
+  font-weight: bold;
+}
+</style>

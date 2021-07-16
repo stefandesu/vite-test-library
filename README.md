@@ -89,6 +89,9 @@ const app = createApp(App)
 import * as ViteTestLibrary from "@stefandesu/vite-test-library"
 app.use(ViteTestLibrary)
 
+// Import stylesheet
+import "@stefandesu/vite-test-library/dist/style.css"
+
 app.mount('#app')
 ```
 
@@ -102,6 +105,9 @@ const app = createApp(App)
 import { Bold } from "@stefandesu/vite-test-library"
 app.use(Bold)
 
+// Import stylesheet
+import "@stefandesu/vite-test-library/dist/style.css"
+
 app.mount('#app')
 ```
 
@@ -109,6 +115,8 @@ app.mount('#app')
 ```js
 import { defineComponent } from "vue"
 import { Bold } from "@stefandesu/vite-test-library"
+// Import stylesheet
+import "@stefandesu/vite-test-library/dist/style.css"
 
 export default defineComponent({
   // ...
@@ -132,6 +140,8 @@ Fully working HTML example:
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vue App</title>
+    <!-- Our library's stylesheet here (adjust version if necessary) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@stefandesu/vite-test-library@0.1/dist/style.css">
   </head>
   <body>
     <div id="app">
